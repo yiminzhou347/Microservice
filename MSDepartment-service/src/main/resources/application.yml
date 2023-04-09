@@ -1,0 +1,24 @@
+server:
+  port: 9001
+
+
+spring:
+  application:
+    name: DEPARTMENT-SERVICE
+  datasource:
+    url: jdbc:mysql://localhost:3306/genspark
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate.ddl-auto: update
+  #How the query is executed. you can set it to "create",then everytime it will create a new table
+  properties:
+    hibernate:
+      dialect: org.hibernate.dialect.MySQLDialect
+  #it converts a java object type to mysql type
+  show-sql: true
+  #log the query on console ? true
+  cloud:
+    config:
+      enabled: false
