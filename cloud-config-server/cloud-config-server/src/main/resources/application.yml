@@ -8,8 +8,5 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/yiminzhou347/config-server
+          uri: https://github.com/yiminzhou347/config-server.git
           clone-on-start: true
-
-
-
